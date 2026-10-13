@@ -1,0 +1,21 @@
+export default function Logo({ size = 48 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#7c3aed" />
+          <stop offset="1" stopColor="#06b6d4" />
+        </linearGradient>
+      </defs>
+      <rect width="64" height="64" rx="14" fill="url(#logoGrad)" />
+      <path
+        d="M20 22h24c6 0 10 5 11 12l1.5 9c.6 3.6-2 6-5 6-2.5 0-4-1.2-5.5-3L42 42H22l-4 4c-1.5 1.8-3 3-5.5 3-3 0-5.6-2.4-5-6l1.5-9c1-7 5-12 11-12z"
+        fill="#fff"
+      />
+      <rect x="18.5" y="26" width="5" height="12" rx="1.5" fill="#5b21b6" />
+      <rect x="15" y="29.5" width="12" height="5" rx="1.5" fill="#5b21b6" />
+      <circle cx="43" cy="29" r="2.8" fill="#06b6d4" />
+      <circle cx="48" cy="35" r="2.8" fill="#f43f5e" />
+    </svg>
+  );
+}
