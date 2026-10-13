@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { games } from "@/lib/games";
 import GameRenderer from "@/components/GameRenderer";
 import type { Metadata } from "next";
+export const instant = false;
 
 export async function generateMetadata({
   params,
